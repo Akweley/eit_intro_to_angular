@@ -1,1 +1,100 @@
 /* You can add global styles to this file, and also import other style files */
+
+.relative-pos{
+    position:relative;
+
+    background-color:black;
+    height: 50vh;
+    width: 300px;
+    left: 300px;
+    top: 100px;
+    color:white;
+    z-index: 1;
+}
+.absolute-pos{
+    position:absolute;
+    background-color: aquamarine;
+    width: 100px;
+    height:300px;
+   
+}
+.fixed-pos{
+    position:absolute;
+    background-color: orangered;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    bottom: 10px;
+    color:white;
+    padding:1rem;
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.sticky-pos{
+    position: sticky;
+    background-color: #000000;
+    top: 3px;
+    list-style-type: none;
+    padding-left: 0px;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    z-index: 10;
+}
+.sticky-pos > li{
+    margin-left:1rem;
+}
+
+
+body{
+    margin:0px;
+}
+.logo{
+    width:60px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.wrapper .side-nav{
+    width: 250px;
+    height: 100vh;
+}
+.wrapper .side-nav .menu{
+list-style: none;
+padding-left: 10px;
+}
+
+.wrapper .side-nav .menu li{
+    color: #00C8C8;
+    padding: 25px 0px;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 7px;
+
+}
+.wrapper .side-nav .menu li:hover{
+    background-color: #05d8d8;
+    color:white;
+}
+.wrapper .side-nav .menu .menu-active{
+    background-color: #00C8C8;
+    color:white;
+
+}
+
+
+.wrapper .side-nav .menu .menu-icon{
+    width:20px;
+    margin-right: 10px;
+    margin-left: 40px;
+    
+}
