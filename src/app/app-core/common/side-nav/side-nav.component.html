@@ -1,35 +1,40 @@
 
 <div class="side-nav">
     <img class="logo" src="./image/inmest.jpg" alt="Logo">
+
     <ul class="menu">
-        <li class="menu-active">
-            <a [routerLink]="['/']">
-                <img class="menu-icon" src="icons/dashbard icon.svg" alt="Dashboard icons">
+        <li class="">
+            <a [routerLink]="['/']" [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}">
+                <i class="fa fa-tachometer" aria-hidden="true"></i>
                 Dashboard
             </a>
             
         </li>
-        <li>
-            <a [routerLink]="['/my-classes']">
-            <img class="menu-icon" src="icons/Group 1033.svg" alt="Attendance">
+
+        <li class="">
+            <a [routerLink]="['/my-classes']" [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
             Attendance
         </a>
         </li>
-        <li>
-            <a [routerLink]="['/leave']">
-            <img class="menu-icon" src="icons/Group 1034.svg" alt="Leave">
+
+        <li class="">
+            <a [routerLink]="['/leave']" [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}">
+            <i class="fa fa-bed" aria-hidden="true"></i>
             Leave
             </a>
         </li>
-        <li>
-            <a [routerLink]="['/analytics']">
-            <img class="menu-icon" src="icons/Group 1035.svg" alt="Analytics">
+
+        <li class="">
+            <a [routerLink]="['/analytics']" [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}">
+            <i class="fa fa-area-chart" aria-hidden="true"></i>
             Analytics
             </a>
         </li>
-        <li>
-            <a [routerLink]="['/users']">
-            <img class="menu-icon" src="icons/Group 1036.svg" alt="Users">
+
+        <li class="">
+            <a [routerLink]="['/users']" [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}">
+            <i class="fa fa-users" aria-hidden="true"></i>
             Users
         </a>
         </li>

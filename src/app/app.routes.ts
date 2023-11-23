@@ -4,6 +4,7 @@ import { UsersComponent } from './main-features/users/users.component';
 import { MyClassesComponent } from './main-features/my-classes/my-classes.component';
 import { LeaveComponent } from './main-features/leave/leave.component';
 import { AnalyticsComponent } from './main-features/analytics/analytics.component';
+import { UserDetailComponent } from './main-features/user-detail/user-detail.component';
 
 export const routes: Routes = [
     {path: '', component: DashboardComponent},
@@ -11,5 +12,6 @@ export const routes: Routes = [
     {path: 'my-classes', component: MyClassesComponent},
     {path: 'leave', component: LeaveComponent},
     {path: 'analytics', component: AnalyticsComponent},
+    {path: 'user-detail', component: UserDetailComponent},
     
 ];
