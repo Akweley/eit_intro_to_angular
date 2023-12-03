@@ -16,6 +16,7 @@ export class LeaveService {
     status: "PENDING",
     last_modified: "Nov 27, 2023",
     status_changed_by: "Derrick",
+    description: "I want to go home",
   },
   {
     id: 2, 
@@ -26,6 +27,7 @@ export class LeaveService {
     status: "PENDING",
     last_modified: "Nov 27, 2023",
     status_changed_by: "Xarri",
+    description: "I want to go to bae",
   }
 ];
 

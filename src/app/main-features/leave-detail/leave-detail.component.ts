@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { LeaveService } from '../../services/leave.service';
 
 @Component({
@@ -17,8 +17,14 @@ export class LeaveDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private leaveService: LeaveService
+    private leaveService: LeaveService,
+    private router: Router,
     ){}
+
+    goback(){
+      this.router.navigate(['/leaves'], { relativeTo: this.route})
+    }
+
   ngOnInit(): void{
     this.route.params.subscribe(param => {
       this.leaveId = param["id"];
