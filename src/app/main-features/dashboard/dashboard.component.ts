@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgApexchartsModule } from 'ng-apexcharts';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule, NgApexchartsModule],
+  imports: [CommonModule, NgApexchartsModule, RouterModule],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'
 })
