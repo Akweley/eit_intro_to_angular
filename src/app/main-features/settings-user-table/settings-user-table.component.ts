@@ -11,7 +11,7 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {id: 1, name: 'Emily Fiagbedze', date_created: '27/03/2023', position: 'super admin'},
+  {id: 1, name: 'Emily Fiagbedzi', date_created: '27/03/2023', position: 'super admin'},
   {id: 2, name: 'Victor Atinyo', date_created: '27/03/2023', position: 'admin'},
   {id: 3, name: 'Daniel Narh', date_created: '27/03/2023', position: 'staff'},
   {id: 4, name: 'Samson Were', date_created: '27/03/2023', position: 'EIT'},
